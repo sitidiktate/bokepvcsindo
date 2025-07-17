@@ -125,7 +125,7 @@ async function processThumbnails() {
         }
 
         // --- Attempt 2: If original failed and it's a Doodcdn URL, try the opposite type ---
-        if (!thumbnailOptimizedSuccessfully && video.thumbnail.includes('img.doodcdn.io')) {
+        if (!thumbnailOptimizedSuccessfully && video.thumbnail.includes('postercdn.com')) {
             let altDoodcdnUrl = null;
 
             if (video.thumbnail.includes('/snaps/')) {
